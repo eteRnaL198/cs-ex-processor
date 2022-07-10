@@ -1,0 +1,84 @@
+`timescale 1ns/1ns
+module rom(adrs, dout);
+	input  [ 8:0] adrs;
+	output [31:0] dout;
+	reg    [31:0] dout;
+	
+	always@(adrs) begin
+		case(adrs)
+			9'd0 : dout <= 32'h3c011001;
+			9'd1 : dout <= 32'h34300000;
+			9'd2 : dout <= 32'h24040004;
+			9'd3 : dout <= 32'hae040000;
+			9'd4 : dout <= 32'h24040002;
+			9'd5 : dout <= 32'hae040004;
+			9'd6 : dout <= 32'h24040003;
+			9'd7 : dout <= 32'hae040008;
+			9'd8 : dout <= 32'h24040001;
+			9'd9 : dout <= 32'hae04000c;
+			9'd10 : dout <= 32'h24020001;
+			9'd11 : dout <= 32'h0000000c;
+			9'd12 : dout <= 32'h00108820;
+			9'd13 : dout <= 32'h200a0000;
+			9'd14 : dout <= 32'h200b0000;
+			9'd15 : dout <= 32'h8e280000;
+			9'd16 : dout <= 32'h8e290004;
+			9'd17 : dout <= 32'h0109602a;
+			9'd18 : dout <= 32'h15800003;
+			9'd19 : dout <= 32'h216b0001;
+			9'd20 : dout <= 32'hae280004;
+			9'd21 : dout <= 32'hae290000;
+			9'd22 : dout <= 32'h22310004;
+			9'd23 : dout <= 32'h200c0003;
+			9'd24 : dout <= 32'h018a6022;
+			9'd25 : dout <= 32'h116c0003;
+			9'd26 : dout <= 32'h00000000;
+			9'd27 : dout <= 32'h08100010;
+			9'd28 : dout <= 32'h8e280000;
+			9'd29 : dout <= 32'h200b0000;
+			9'd30 : dout <= 32'h214a0001;
+			9'd31 : dout <= 32'h00108820;
+			9'd32 : dout <= 32'h200c0003;
+			9'd33 : dout <= 32'h154cffee;
+			9'd34 : dout <= 32'h8e280000;
+			9'd35 : dout <= 32'h24020001;
+			9'd36 : dout <= 32'h0000000c;
+			9'd37 : dout <= 32'h240d0064;
+			9'd38 : dout <= 32'h3c011001;
+			9'd39 : dout <= 32'h34338000;
+			9'd40 : dout <= 32'h3c011001;
+			9'd41 : dout <= 32'h34310000;
+			9'd42 : dout <= 32'hae6d000c;
+			9'd43 : dout <= 32'h3c011001;
+			9'd44 : dout <= 32'h34320190;
+			9'd45 : dout <= 32'h24020001;
+			9'd46 : dout <= 32'h0000000c;
+			9'd47 : dout <= 32'h20080065;
+			9'd48 : dout <= 32'h2108ffff;
+			9'd49 : dout <= 32'h11000009;
+			9'd50 : dout <= 32'h00000000;
+			9'd51 : dout <= 32'h8e290000;
+			9'd52 : dout <= 32'h00000000;
+			9'd53 : dout <= 32'h1109fffa;
+			9'd54 : dout <= 32'h22310004;
+			9'd55 : dout <= 32'h200d012c;
+			9'd56 : dout <= 32'hae6d000c;
+			9'd57 : dout <= 32'h0810003d;
+			9'd58 : dout <= 32'h00000000;
+			9'd59 : dout <= 32'hae6d000c;
+			9'd60 : dout <= 32'h00000000;
+			9'd61 : dout <= 32'h24020001;
+			9'd62 : dout <= 32'h0000000c;
+			9'd63 : dout <= 32'h3c011001;
+			9'd64 : dout <= 32'h34310000;
+			9'd65 : dout <= 32'h8e290000;
+			9'd66 : dout <= 32'h22310004;
+			9'd67 : dout <= 32'h1632fffd;
+			9'd68 : dout <= 32'hae690000;
+			9'd69 : dout <= 32'h00000000;
+			9'd70 : dout <= 32'h2402000a;
+			9'd71 : dout <= 32'h0000000c;
+			default : dout <= 32'h0;
+		endcase
+	end
+endmodule

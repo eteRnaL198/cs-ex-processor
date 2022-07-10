@@ -1,0 +1,11 @@
+ Address    Code        Basic                     Source
+
+0x00400000  0x20100005  addi $16,$0,0x000000052    	addi	$s0,	$zero,	5
+0x00400004  0x22110003  addi $17,$16,0x00000003    	addi	$s1,	$s0,	3
+0x00400008  0x16110002  bne $16,$17,0x000000024    	bne	$s0,	$s1,	ELSE
+0x0040000c  0x2210ffff  addi $16,$16,0xfffffff5    	addi	$s0,	$s0,	-1
+0x00400010  0x08100006  j 0x00400018          6    	j	NEXT
+0x00400014  0x22100001  addi $16,$16,0x00000007    ELSE:	addi	$s0,	$s0,	1
+0x00400018  0x02319020  add $18,$17,$17       8    NEXT:	add	$s2,	$s1,	$s1
+0x0040001c  0x2402000a  addiu $2,$0,0x0000000a9    	li	$v0,	10
+0x00400020  0x0000000c  syscall               10   	syscall
