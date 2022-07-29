@@ -28,19 +28,19 @@ int main() {
   }
 }
 
-int insertionSort() {
-  int i, j, temp;
-  for (i = 1; i < 4; i++) {
-    temp = arr[i];
-    j = i - 1;
-    while (j >= 0 && arr[j] > temp) {
-      arr[j + 1] = arr[j];
-      j = j - 1;
-    }
-    arr[j + 1] = temp;
-  }
-  return 0;
-}
+// int insertionSort() {
+//   int i, j, temp;
+//   for (i = 1; i < 4; i++) {
+//     temp = arr[i];
+//     j = i - 1;
+//     while (j >= 0 && arr[j] > temp) {
+//       arr[j + 1] = arr[j];
+//       j = j - 1;
+//     }
+//     arr[j + 1] = temp;
+//   }
+//   return 0;
+// }
 
 // quickSort() {
 //   int i, j, temp;

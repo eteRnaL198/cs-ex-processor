@@ -1,0 +1,56 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Sun Jul  3 14:11:13 2022
+[*]
+[dumpfile] "/mnt/g/マイドライブ/hdl/mips/mips.vcd"
+[dumpfile_mtime] "Sun Jul  3 14:08:49 2022"
+[dumpfile_size] 23159
+[savefile] "/mnt/g/マイドライブ/hdl/mips/mips.gtkw"
+[timestart] 0
+[size] 1440 837
+[pos] -9 -33
+*-5.908367 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 214
+[signals_width] 174
+[sst_expanded] 1
+[sst_vpaned_height] 260
+@28
+sim.clk
+sim.rst
+sim.data_hzd
+sim.fwd_sel
+sim.ctrl_hzd
+@200
+-IF
+@22
+sim.pc0[31:0]
+@200
+-ID
+@22
+sim.inst1[31:0]
+sim.op[5:0]
+sim.fn[5:0]
+sim.src_a[4:0]
+sim.src_b[4:0]
+sim.fwd_reg_a[31:0]
+sim.fwd_reg_b[31:0]
+sim.dst[4:0]
+@200
+-EX
+@22
+sim.alu_a[31:0]
+sim.alu_b[31:0]
+sim.dst2[4:0]
+@200
+-MEM
+@22
+sim.alu_q3[31:0]
+sim.ram_din3[31:0]
+sim.dst3[4:0]
+@200
+-WB
+@22
+sim.reg_din[31:0]
+sim.dst4[4:0]
+[pattern_trace] 1
+[pattern_trace] 0
