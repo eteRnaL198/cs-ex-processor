@@ -1,9 +1,9 @@
 .data
 	save:
-	.space 16
+	.space 8
 
 .text
-	la	$s0,	save			# 配�?��?�先�?�アドレス
+	la	$s0,	save			# 配�?��?�先�?�アドレス
 	li	$v0,	1
 	addiu	$a0,	$zero,	 13
 	# addiu	$a0,	$zero,	 11
@@ -14,7 +14,7 @@
 	syscall
 
 	# $t0: a, $t1: b, $t2: y
-Mul: add	$s1,	$zero,	$s0	# �?ータの先�?�番地�?$s1に保�?
+Mul: add	$s1,	$zero,	$s0	# �?ータの先�?�番地�?$s1に保�?
 	lw $t0, 0($s1)
 	lw $t1, 4($s1)
 	addi $t2, $zero, 0

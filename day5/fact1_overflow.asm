@@ -6,7 +6,7 @@
   li  $sp, 0x10017ffc
 	la	$s0,	save			# 配列の先頭アドレス
 	li	$v0,	1
-	addiu	$a0,	$zero,	 6
+	addiu	$a0,	$zero,	 13
 	sw		$a0,	  0($s0)
 	li	$v0,	1
 	syscall

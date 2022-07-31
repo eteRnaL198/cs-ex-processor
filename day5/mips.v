@@ -164,7 +164,7 @@ module mips(clk, rst, pc0, inst1, alu_a, alu_b, alu_q3, ram_din3, reg_din,
 	/* fn: (22) sub, (23) subu */
 	wire i_sub    = (fn[5:1] == 5'b10001) & i_rfmt;
 	/* op: (1C) mul */
-	wire i_mul = (op == 6'b011100) | (fn[5:1] == 5'b00001); // add
+	wire i_mul = (op == 6'b011100) & (fn == 6'b000010); // add
 /**/
 	/* CPU Halt */
 	assign halt = i_syscall;
@@ -320,7 +320,7 @@ module mips(clk, rst, pc0, inst1, alu_a, alu_b, alu_q3, ram_din3, reg_din,
 	/* Set on Less Than */
 	wire [31:0] dslt = {31'h0, dsub[32]};
 	/* mul */ // add mul
-	wire [31:0] dmul = {sgn_a, alu_a} * {sgn_b, alu_b};
+	wire [32:0] dmul = {sgn_a, alu_a} * {sgn_b, alu_b};
 
 /*************************
  EX/MEM Pipeline Registers
